@@ -1,0 +1,42 @@
+#全部数据集
+PARAMETER:
+  train_label_dir: /home/lyx/data/Meipai/original/Y_train3.mat
+  train_scene_dir: /home/lyx/data/Meipai/original/scene_train3.mat
+  train_mfcc_dir: /home/lyx/data/Meipai/original/mfcc_train.mat
+  train_tra_dir: /home/lyx/data/Meipai/original/tra_train3.mat
+  test_label_dir: /home/lyx/data/Meipai/original/Y_test.mat
+  test_scene_dir: /home/lyx/data/Meipai/original/scene_test.mat
+  test_mfcc_dir: /home/lyx/data/Meipai/original/mfcc_test.mat
+  test_tra_dir: /home/lyx/data/Meipai/original/tra_test.mat
+  labelgcn_name: /home/lyx/data/Meipai/original/LabelVectorized.mat
+  adj: /home/lyx/data/Meipai/original/adj_less.mat
+  adj_file: /home/lyx/data/Meipai/v1/adj.pkl
+  tensorboard: ./plot_0401/
+  logger_name: ./run_0401_1/
+  log: ./log/0401.txt
+  train_epochs: 100
+  test_epochs: 100
+  rt_epochs: 100
+  train_batch_size: 128
+  test_batch_size: 128
+  num_train: 80000
+  num_test: 22255
+  classes: 63
+  t: 0.08
+  eta: 1
+  gamma: 0.01
+  in_channel: 300
+  learning_rate: 0.1
+  lr_update: 200
+  cpm_lsd_dim: 512
+  cpm_hidden_dim1: 1500
+  cpm_hidden_dim2: 1600
+  cpm_out_dim: 2048
+  device: 0
+  resume:
+
+  optimizer:
+    type: SGD
+    momentum: 0.9
+    weight_decay: 0.0001
+    nesterov: True
